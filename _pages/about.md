@@ -46,9 +46,7 @@ _July 2024 - August 2024_
 ## Extracurricular Activities
 - Selected for the second cohort of the **"Beichen Program"**, Weiyang College’s tailored education program for scientific innovation (March 2024 - Present)
 - Attended the **"Multimodal Neural Modulation and Detection Technologies"** symposium (August 17-18, 2023)
-- Head of the **Science and Technology Association**, Weiyang College (December 2023 - Present)
-- Committee Member of **Weiyang-Materials Class of 2022** (September 2023 - August 2024)
-- Class Representative for **Weiyang-Materials Class of 2022** (September 2022 - August 2023)
+
 
 ## Contact Information
 - **Email:** caihl22@mails.tsinghua.edu.cn  
