@@ -11,4 +11,4 @@ I am a dedicated undergraduate student at **Tsinghua University**, currently enr
 
 
 You can find my CV here:  
-[CV (Chinese version)](https://github.com/chloralthu/cv-cn.pdf)
+[CV (Chinese version)](https://github.com/ChloralTHU/ChloralTHU.github.io/blob/master/cv-cn.pdf)
