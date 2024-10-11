@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "Cai Honglai"
 author_profile: true
 redirect_from: 
   - /about/
