@@ -9,6 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
+[PDF (Chinese version)](https://github.com/ChloralTHU/ChloralTHU.github.io/blob/master/cv-cn.pdf)
+
+
 ## Education
 - **Bachelor of Science**, Fundamental Mathematical Sciences + Materials Science and Engineering  
   *Weiyang College, Tsinghua University*  
