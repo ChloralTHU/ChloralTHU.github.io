@@ -13,7 +13,7 @@ I am a dedicated undergraduate student at **Tsinghua University**, currently enr
 - **Bachelor of Science**, Fundamental Mathematical Sciences + Materials Science and Engineering  
   *Weiyang College, Tsinghua University*  
   _September 2022 - Present_  
-  GPA: 3.854 (Top 30%)
+  GPA: 3.*** (Top 30%)
 
 ## Key Courses and Skills
 - **Core Courses:** Fundmentals of Materials Science, Biomedical Sensors, Fundmentals of Physics, Physical Chemistry, Organic Chemistry, Biochemistry (A+), Molecular Biology
