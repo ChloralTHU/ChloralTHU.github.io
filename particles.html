@@ -1,0 +1,6211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="COMSOL Multiphysics model report" />
+    <meta name="keywords" content="comsol multiphysics model report" />
+    <!-- saved from url=(0014)about:internet -->
+    <title>particles</title>
+    <link rel="stylesheet" href="particles_files/report.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div>
+      <a href="https://www.comsol.com">
+        <img src="particles_files/logo.png" width="159" height="34" style="float:right;border:none" />
+      </a>
+    </div>
+    <div class="ReportTitle" id="cs3135706">
+       <span>仿真</span>
+    </div>
+    <table border="1">
+      <tr>
+        <td>
+           <span>报告日期</span>
+        </td>
+        <td>
+           <span>2024年10月31日 下午7:41:27</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TocHeading">
+       <span>目录</span>
+    </div>
+    <table style="border:0px;">
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs8016187">
+             <span>全局定义</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>1.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs5457044">
+             <span>共享属性</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs1124759">
+             <span>组件 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3614404">
+             <span>定义</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs7020406">
+             <span>几何 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs2104187">
+             <span>材料</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4878179">
+             <span>流体流动颗粒跟踪</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.5.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6471489">
+             <span>网格 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs1246310">
+             <span>研究 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs9278127">
+             <span>瞬态</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs8326517">
+             <span>求解器配置</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs1712596">
+             <span>结果</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4344619">
+             <span>数据集</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs7863427">
+             <span>表格</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs5529678">
+             <span>绘图组</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs8581165">
+      <a name="cs8016187">
+         <span>1. 全局定义</span>
+      </a>
+    </h2>
+    <table border="1">
+      <tr>
+        <td>
+           <span>日期</span>
+        </td>
+        <td>
+           <span>Oct 28, 2024, 11:45:08 AM</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6172377">
+           <span>全局设置</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>名称</span>
+        </td>
+        <td>
+           <span>仿真.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>路径</span>
+        </td>
+        <td>
+           <span>D:\University\OneDrive - mails.tsinghua.edu.cn\生物医学检测-器件与试剂\仿真.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>版本</span>
+        </td>
+        <td>
+           <span>COMSOL Multiphysics 6.1 (开发版本: 252)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>单位制</span>
+        </td>
+        <td>
+           <span>SI</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs3402991">
+           <span>使用的产品</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>COMSOL Multiphysics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子追踪模块</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9344959">
+           <span>计算机信息</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>CPU</span>
+        </td>
+        <td>
+           <span>Intel64 Family 6 Model 154 Stepping 3, 16 内核数, 15.69 GB RAM</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>操作系统</span>
+        </td>
+        <td>
+           <span>Windows 10</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs3745897">
+      <a name="cs5457044">
+         <span>1.1. 共享属性</span>
+      </a>
+    </h3>
+    <h4 id="cs3667594">
+      <a name="cs2295677">
+         <span>1.1.1. 默认模型输入</span>
+      </a>
+    </h4>
+    <table border="1">
+      <tr>
+        <td>
+           <span>标记</span>
+        </td>
+        <td>
+           <span>cminpt</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs3101347">
+      <a name="cs1124759">
+         <span>2. 组件 1</span>
+      </a>
+    </h2>
+    <table border="1">
+      <tr>
+        <td>
+           <span>日期</span>
+        </td>
+        <td>
+           <span>Oct 28, 2024, 10:57:24 AM</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2458092">
+           <span>设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>单位制</span>
+        </td>
+        <td>
+           <span>与全局坐标系相同（SI）</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>几何形函数</span>
+        </td>
+        <td>
+           <span>自动</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4921086">
+           <span>空间坐标系的坐标</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>第一轴</span>
+        </th>
+        <th>
+           <span>第二轴</span>
+        </th>
+        <th>
+           <span>第三轴</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>x</span>
+        </td>
+        <td>
+           <span>y</span>
+        </td>
+        <td>
+           <span>z</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8756293">
+           <span>材料坐标系的坐标</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>第一轴</span>
+        </th>
+        <th>
+           <span>第二轴</span>
+        </th>
+        <th>
+           <span>第三轴</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>X</span>
+        </td>
+        <td>
+           <span>Y</span>
+        </td>
+        <td>
+           <span>Z</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2537937">
+           <span>几何坐标系的坐标</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>第一轴</span>
+        </th>
+        <th>
+           <span>第二轴</span>
+        </th>
+        <th>
+           <span>第三轴</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Xg</span>
+        </td>
+        <td>
+           <span>Yg</span>
+        </td>
+        <td>
+           <span>Zg</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9580030">
+           <span>网格坐标系的坐标</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>第一轴</span>
+        </th>
+        <th>
+           <span>第二轴</span>
+        </th>
+        <th>
+           <span>第三轴</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Xm</span>
+        </td>
+        <td>
+           <span>Ym</span>
+        </td>
+        <td>
+           <span>Zm</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs6369752">
+      <a name="cs3614404">
+         <span>2.1. 定义</span>
+      </a>
+    </h3>
+    <h4 id="cs7636989">
+      <a name="cs4683756">
+         <span>2.1.1. 坐标系</span>
+      </a>
+    </h4>
+    <h5 id="cs7690533">
+      <a name="cs6559722">
+         <span>边界坐标系 1</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <td>
+           <span>坐标系类型</span>
+        </td>
+        <td>
+           <span>边界坐标系</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>标记</span>
+        </td>
+        <td>
+           <span>sys1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2879581">
+           <span>坐标名称</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>第一轴</span>
+        </th>
+        <th>
+           <span>第二轴</span>
+        </th>
+        <th>
+           <span>第三轴</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>t1</span>
+        </td>
+        <td>
+           <span>n</span>
+        </td>
+        <td>
+           <span>to</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs8111770">
+      <a name="cs7020406">
+         <span>2.2. 几何 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="particles_files/geom_geom1_view1.png" alt="geom_geom1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6639838">
+         <span>几何 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5449500">
+           <span>单位</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>长度单位</span>
+        </td>
+        <td>
+           <span>mm</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>角单位</span>
+        </td>
+        <td>
+           <span>deg</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs1044647">
+           <span>几何统计信息</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>空间维度</span>
+        </td>
+        <td>
+           <span>2</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>域数</span>
+        </td>
+        <td>
+           <span>2</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>边界数</span>
+        </td>
+        <td>
+           <span>145</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>顶点数</span>
+        </td>
+        <td>
+           <span>144</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs8742210">
+      <a name="cs5021088">
+         <span>2.2.1. 导入 1 (imp1)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs6286031">
+           <span>设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>源</span>
+        </td>
+        <td>
+           <span>DXF 文件</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>文件名</span>
+        </td>
+        <td>
+           <span>D:\University\OneDrive - mails.tsinghua.edu.cn\生物医学检测 - 器件与试剂\try.dxf</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs7605959">
+      <a name="cs2104187">
+         <span>2.3. 材料</span>
+      </a>
+    </h3>
+    <h4 id="cs6920370">
+      <a name="cs7498620">
+         <span>2.3.1. H2O (water) [liquid]</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/mat_mat1_view1.png" alt="mat_mat1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6780973">
+         <span>H2O (water) [liquid]</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4273312">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 所有域</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7944139">
+           <span>基本</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>导热系数</span>
+        </td>
+        <td>
+           <span>k_liquid_2(T)</span>
+        </td>
+        <td>
+           <span>W/(m·K)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>热膨胀系数</span>
+        </td>
+        <td>
+           <span>(alpha_liquid_2(T) + (-293 + Tempref)*if(abs(T - Tempref)&gt;0.001, (alpha_liquid_2(T) - alpha_liquid_2(Tempref))/(T - Tempref), d(alpha_liquid_2(T), T)))/(1 + alpha_liquid_2(Tempref)*(-293 + Tempref))</span>
+        </td>
+        <td>
+           <span>1/K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>恒压热容</span>
+        </td>
+        <td>
+           <span>C_liquid_2(T)</span>
+        </td>
+        <td>
+           <span>J/(kg·K)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>HC</span>
+        </td>
+        <td>
+           <span>HC_liquid_2(T)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>VP</span>
+        </td>
+        <td>
+           <span>VP_liquid_2(T)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>rho_liquid_2(T)</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>TD</span>
+        </td>
+        <td>
+           <span>TD_liquid_2(T)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>动力黏度</span>
+        </td>
+        <td>
+           <span>eta_liquid_1(T)</span>
+        </td>
+        <td>
+           <span>Pa·s</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>SurfF</span>
+        </td>
+        <td>
+           <span>SurfF(T)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9828537">
+           <span>Functions</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>函数名称</span>
+        </th>
+        <th>
+           <span>类型</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>k_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>alpha_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>C_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>HC_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>VP_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>rho_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>TD_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>eta_liquid_1</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>SurfF</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs9580631">
+      <a name="cs7276676">
+         <span>Piecewise</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_k_liquid_2.png" alt="mat_mat1_def_k_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8038772">
+         <span>k_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs1762186">
+      <a name="cs1976613">
+         <span>Piecewise 1</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_alpha_liquid_2.png" alt="mat_mat1_def_alpha_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3692549">
+         <span>alpha_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs8046875">
+      <a name="cs8713752">
+         <span>Piecewise 2</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_C_liquid_2.png" alt="mat_mat1_def_C_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8941661">
+         <span>C_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs7763818">
+      <a name="cs4488181">
+         <span>Piecewise 3</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_HC_liquid_2.png" alt="mat_mat1_def_HC_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5499469">
+         <span>HC_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs3684786">
+      <a name="cs2394140">
+         <span>Piecewise 4</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_VP_liquid_2.png" alt="mat_mat1_def_VP_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3781837">
+         <span>VP_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs5412674">
+      <a name="cs2722524">
+         <span>Piecewise 5</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_rho_liquid_2.png" alt="mat_mat1_def_rho_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6819150">
+         <span>rho_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs3774206">
+      <a name="cs6096534">
+         <span>Piecewise 6</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_TD_liquid_2.png" alt="mat_mat1_def_TD_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs4323558">
+         <span>TD_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs9521836">
+      <a name="cs6139438">
+         <span>Piecewise 7</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_eta_liquid_1.png" alt="mat_mat1_def_eta_liquid_1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5070185">
+         <span>eta_liquid_1</span>
+      </a>
+    </p>
+    <h5 id="cs6798716">
+      <a name="cs1815952">
+         <span>Piecewise 8</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_def_SurfF.png" alt="mat_mat1_def_SurfF.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1729675">
+         <span>SurfF</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5062933">
+           <span>热膨胀</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>正切热膨胀系数</span>
+        </td>
+        <td>
+           <span>CTE_liquid_2(T)</span>
+        </td>
+        <td>
+           <span>1/K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>热应变</span>
+        </td>
+        <td>
+           <span>(dL_liquid_2(T) - dL_liquid_2(Tempref))/(1 + dL_liquid_2(Tempref))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2973364">
+           <span>Functions</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>函数名称</span>
+        </th>
+        <th>
+           <span>类型</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>dL_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>CTE_liquid_2</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs5605329">
+      <a name="cs5789168">
+         <span>Piecewise</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_ThermalExpansion_dL_liquid_2.png" alt="mat_mat1_ThermalExpansion_dL_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5327882">
+         <span>dL_liquid_2</span>
+      </a>
+    </p>
+    <h5 id="cs3922400">
+      <a name="cs7904358">
+         <span>Piecewise 1</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat1_ThermalExpansion_CTE_liquid_2.png" alt="mat_mat1_ThermalExpansion_CTE_liquid_2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7165583">
+         <span>CTE_liquid_2</span>
+      </a>
+    </p>
+    <h4 id="cs3155761">
+      <a name="cs9652392">
+         <span>2.3.2. Palm oil [liquid]</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/mat_mat2_view1.png" alt="mat_mat2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs4928553">
+         <span>Palm oil [liquid]</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs9606871">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 没有域 </span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6260606">
+           <span>基本</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>热膨胀系数</span>
+        </td>
+        <td>
+           <span>(alpha(T) + (-313 + Tempref)*if(abs(T - Tempref)&gt;0.001, (alpha(T) - alpha(Tempref))/(T - Tempref), d(alpha(T), T)))/(1 + alpha(Tempref)*(-313 + Tempref))</span>
+        </td>
+        <td>
+           <span>1/K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>rho(T)</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>SurfF</span>
+        </td>
+        <td>
+           <span>SurfF(T)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs1145186">
+           <span>Functions</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>函数名称</span>
+        </th>
+        <th>
+           <span>类型</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>alpha</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>rho</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>SurfF</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs2992756">
+      <a name="cs4440502">
+         <span>Piecewise</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat2_def_alpha.png" alt="mat_mat2_def_alpha.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3705356">
+         <span>alpha</span>
+      </a>
+    </p>
+    <h5 id="cs6737814">
+      <a name="cs2701731">
+         <span>Piecewise 1</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat2_def_rho.png" alt="mat_mat2_def_rho.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2210670">
+         <span>rho</span>
+      </a>
+    </p>
+    <h5 id="cs2309436">
+      <a name="cs3072809">
+         <span>Piecewise 2</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat2_def_SurfF.png" alt="mat_mat2_def_SurfF.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2252763">
+         <span>SurfF</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs1916058">
+           <span>热膨胀</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>正切热膨胀系数</span>
+        </td>
+        <td>
+           <span>CTE(T)</span>
+        </td>
+        <td>
+           <span>1/K</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>热应变</span>
+        </td>
+        <td>
+           <span>(dL(T) - dL(Tempref))/(1 + dL(Tempref))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9929035">
+           <span>Functions</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>函数名称</span>
+        </th>
+        <th>
+           <span>类型</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>dL</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>CTE</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs6482310">
+      <a name="cs2961157">
+         <span>Piecewise</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat2_ThermalExpansion_dL.png" alt="mat_mat2_ThermalExpansion_dL.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5007492">
+         <span>dL</span>
+      </a>
+    </p>
+    <h5 id="cs9926945">
+      <a name="cs3334160">
+         <span>Piecewise 1</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat2_ThermalExpansion_CTE.png" alt="mat_mat2_ThermalExpansion_CTE.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6312672">
+         <span>CTE</span>
+      </a>
+    </p>
+    <h4 id="cs1449914">
+      <a name="cs2019146">
+         <span>2.3.3. (C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/mat_mat3_view1.png" alt="mat_mat3_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5055236">
+         <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs6040371">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 没有域 </span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6051856">
+           <span>材料参数</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>2000</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4466310">
+           <span>基本</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>2000</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs6081804">
+      <a name="cs5816810">
+         <span>2.3.4. Poly(ethylene oxide) (PEO) or Polyethylene glycol (PEG) [solid]</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/mat_mat4_view1.png" alt="mat_mat4_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6914853">
+         <span>Poly(ethylene oxide) (PEO) or Polyethylene glycol (PEG) [solid]</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs8323450">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 没有域 </span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7455328">
+           <span>基本</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>导热系数</span>
+        </td>
+        <td>
+           <span>k(T)</span>
+        </td>
+        <td>
+           <span>W/(m·K)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>1150</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2119670">
+           <span>Functions</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>函数名称</span>
+        </th>
+        <th>
+           <span>类型</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>k</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs2346159">
+      <a name="cs9142764">
+         <span>Piecewise</span>
+      </a>
+    </h5>
+    <p>
+      <img src="particles_files/mat_mat4_def_k.png" alt="mat_mat4_def_k.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7588352">
+         <span>k</span>
+      </a>
+    </p>
+    <h3 id="cs3417822">
+      <a name="cs4878179">
+         <span>2.4. 流体流动颗粒跟踪</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs1566144">
+           <span>使用的产品</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>COMSOL Multiphysics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子追踪模块</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="particles_files/phys_fpt_view1.png" alt="phys_fpt_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6869994">
+         <span>流体流动颗粒跟踪</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5433899">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 所有域</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs7619255">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_1.png" alt="equ_fpt_1.png" width="64" height="26" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_2.png" alt="equ_fpt_2.png" width="78" height="38" style="padding-left:18pt;border:none" />
+    </p>
+    <h4 id="cs9795445">
+      <a name="cs5015723">
+         <span>2.4.1. 接口设置</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs5137957">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>方程形式</span>
+        </td>
+        <td>
+           <span>研究控制</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5182439">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>公式</span>
+        </td>
+        <td>
+           <span>牛顿</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5614057">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>存储壁相互作用的额外时步</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7742654">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>存储粒子状态数据</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7330713">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>存储粒子释放统计信息</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8683576">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>壁精度阶次</span>
+        </td>
+        <td>
+           <span>2</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5773508">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>重用粒子自由度</span>
+        </td>
+        <td>
+           <span>无</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8424408">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>生成随机数的变元</span>
+        </td>
+        <td>
+           <span>生成唯一变元</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4998302">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>每时步的最大壁相互作用数</span>
+        </td>
+        <td>
+           <span>1000</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7435146">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子释放明细</span>
+        </td>
+        <td>
+           <span>指定释放时间</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7875562">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>包含稀薄效应</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5479381">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>粒度分布</span>
+        </td>
+        <td>
+           <span>指定粒径</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6624748">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>计算粒子温度</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2936765">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>包含面外自由度</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs8487806">
+      <a name="cs3873307">
+         <span>2.4.2. 壁 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_wall1_view1.png" alt="phys_fpt_wall1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1460997">
+         <span>壁 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5902572">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>边界</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 1: 所有边界</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs5969815">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_wall1_1.png" alt="equ_fpt_wall1_1.png" width="103" height="16" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_wall1_2.png" alt="equ_fpt_wall1_2.png" width="155" height="12" style="padding-left:18pt;border:none" />
+    </p>
+    <h5 id="cs5328913">
+      <a name="cs3372547">
+         <span>壁条件</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs4795500">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>壁条件</span>
+        </td>
+        <td>
+           <span>反弹</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs8172583">
+      <a name="cs8567384">
+         <span>一次粒子条件</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs3319048">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>一次粒子条件</span>
+        </td>
+        <td>
+           <span>无</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2529269">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs2030405">
+      <a name="cs4377159">
+         <span>2.4.3. 粒子属性 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs4735263">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>整个模型</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs7303513">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_pp1_1.png" alt="equ_fpt_pp1_1.png" width="64" height="26" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_pp1_2.png" alt="equ_fpt_pp1_2.png" width="78" height="38" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4728051">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子属性</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs5241530">
+      <a name="cs4052632">
+         <span>粒子属性</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs3772306">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>颗粒材料属性</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405 - 0.635 um) (mat3)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子密度</span>
+        </td>
+        <td>
+           <span>来自材料</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子类型</span>
+        </td>
+        <td>
+           <span>固体颗粒</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs5368288">
+      <a name="cs2467414">
+         <span>电荷数</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs1241901">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>电荷规定</span>
+        </td>
+        <td>
+           <span>用户定义</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>电荷数</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs1241206">
+      <a name="cs6499256">
+         <span>吸积或蒸发率明细</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs9430348">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>吸积或蒸发率明细</span>
+        </td>
+        <td>
+           <span>用户定义</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>代谢速率</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>kg/s</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs1903571">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs9119441">
+      <a name="cs3621975">
+         <span>变量</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>表达式</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>选择</span>
+        </th>
+        <th>
+           <span>详细信息</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pp1.rhop</span>
+        </td>
+        <td>
+           <span>material.rhop</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+        <td>
+           <span>粒子密度</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rhop</span>
+        </td>
+        <td>
+           <span>fpt.pp1.rhop</span>
+        </td>
+        <td>
+           <span>kg/m³</span>
+        </td>
+        <td>
+           <span>粒子密度</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.mp</span>
+        </td>
+        <td>
+           <span>fpt.rhop*pi*(fpt.dp+1.0E-50[m])^3/6</span>
+        </td>
+        <td>
+           <span>kg</span>
+        </td>
+        <td>
+           <span>粒子质量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Ap</span>
+        </td>
+        <td>
+           <span>(fpt.dp+1.0E-50[m])^2*pi</span>
+        </td>
+        <td>
+           <span>m²</span>
+        </td>
+        <td>
+           <span>粒子表面积</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Vp</span>
+        </td>
+        <td>
+           <span>(fpt.dp+1.0E-50[m])^3*pi/6</span>
+        </td>
+        <td>
+           <span>m³</span>
+        </td>
+        <td>
+           <span>粒子体积</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rp</span>
+        </td>
+        <td>
+           <span>0.5*(fpt.dp+1.0E-50[m])</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子半径</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pp1.Z</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>电荷数</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Z</span>
+        </td>
+        <td>
+           <span>fpt.pp1.Z</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>电荷数</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pp1.Rp</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>kg/s</span>
+        </td>
+        <td>
+           <span>代谢速率</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Rp</span>
+        </td>
+        <td>
+           <span>fpt.pp1.Rp</span>
+        </td>
+        <td>
+           <span>kg/s</span>
+        </td>
+        <td>
+           <span>代谢速率</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pp1.hp</span>
+        </td>
+        <td>
+           <span>42000[J/kg]</span>
+        </td>
+        <td>
+           <span>Sv</span>
+        </td>
+        <td>
+           <span>粒子潜热</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.hp</span>
+        </td>
+        <td>
+           <span>fpt.pp1.hp</span>
+        </td>
+        <td>
+           <span>Sv</span>
+        </td>
+        <td>
+           <span>粒子潜热</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Qt</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>W</span>
+        </td>
+        <td>
+           <span>总粒子热源</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pp1.ddpdt</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒径时间导数</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.ddpdt</span>
+        </td>
+        <td>
+           <span>fpt.pp1.ddpdt</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒径时间导数</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Ftx</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>N</span>
+        </td>
+        <td>
+           <span>总力，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Fty</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>N</span>
+        </td>
+        <td>
+           <span>总力，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Ftz</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>N</span>
+        </td>
+        <td>
+           <span>总力，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.phii</span>
+        </td>
+        <td>
+           <span>acos(abs(fpt.vx*bndenv(fpt.nx)+fpt.vy*bndenv(fpt.ny)+fpt.vz*bndenv(fpt.nz))/sqrt(fpt.vx^2+fpt.vy^2+fpt.vz^2+eps))</span>
+        </td>
+        <td>
+           <span>rad</span>
+        </td>
+        <td>
+           <span>入射锐角</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqx</span>
+        </td>
+        <td>
+           <span>qx-dest(qx)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子之间的位移，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqy</span>
+        </td>
+        <td>
+           <span>qy-dest(qy)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子之间的位移，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqz</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子之间的位移，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.r</span>
+        </td>
+        <td>
+           <span>sqrt(1.0E-50+fpt.dqx^2+fpt.dqy^2+fpt.dqz^2)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子间距</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Epsum</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.Ep)</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>粒子总动能</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Epmax</span>
+        </td>
+        <td>
+           <span>fpt.max(fpt.Ep)</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>最大粒子动能</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Epmin</span>
+        </td>
+        <td>
+           <span>fpt.min(fpt.Ep)</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>最小粒子动能</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Epave</span>
+        </td>
+        <td>
+           <span>fpt.ave(fpt.Ep)</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>平均粒子动能</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.mpsum</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.mp)</span>
+        </td>
+        <td>
+           <span>kg</span>
+        </td>
+        <td>
+           <span>所有粒子总质量</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Ue</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>静电势能</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dcm</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.dp)/fpt.sum(1)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>平均直径计数</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dsb</span>
+        </td>
+        <td>
+           <span>(fpt.sum(fpt.dp^2)/fpt.sum(1))^0.5</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>平均表面积直径</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dmb</span>
+        </td>
+        <td>
+           <span>(fpt.sum(fpt.dp^3)/fpt.sum(1))^(1/3)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>平均质量直径</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dlm</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.dp^2)/fpt.sum(fpt.dp)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>长度平均直径</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dsm</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.dp^3)/fpt.sum(fpt.dp^2)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>索特平均直径</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dmm</span>
+        </td>
+        <td>
+           <span>fpt.sum(fpt.mp*fpt.dp)/fpt.sum(fpt.mp)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>质量平均直径</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nx</span>
+        </td>
+        <td>
+           <span>nx</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢，x 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.ny</span>
+        </td>
+        <td>
+           <span>ny</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢，y 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nz</span>
+        </td>
+        <td>
+           <span>root.nz</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢，z 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nxmesh</span>
+        </td>
+        <td>
+           <span>nxmesh</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢（网格），x 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nymesh</span>
+        </td>
+        <td>
+           <span>nymesh</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢（网格），y 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nzmesh</span>
+        </td>
+        <td>
+           <span>root.nzmesh</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>法矢（网格），z 分量</span>
+        </td>
+        <td>
+           <span>边界 1–145</span>
+        </td>
+        <td>
+           <span>Meta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.vx</span>
+        </td>
+        <td>
+           <span>d(qx,t)</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒子速度，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.vy</span>
+        </td>
+        <td>
+           <span>d(qy,t)</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒子速度，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.vz</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒子速度，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nvx</span>
+        </td>
+        <td>
+           <span>-fpt.vx</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>负粒子速度，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nvy</span>
+        </td>
+        <td>
+           <span>-fpt.vy</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>负粒子速度，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.nvz</span>
+        </td>
+        <td>
+           <span>-fpt.vz</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>负粒子速度，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.V</span>
+        </td>
+        <td>
+           <span>sqrt(fpt.vx^2+fpt.vy^2+fpt.vz^2)</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒子速度大小</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Veps</span>
+        </td>
+        <td>
+           <span>sqrt(fpt.vx^2+fpt.vy^2+fpt.vz^2+eps)</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>粒子速度大小</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.Ep</span>
+        </td>
+        <td>
+           <span>0.5*fpt.mp*(fpt.vx^2+fpt.vy^2+fpt.vz^2)</span>
+        </td>
+        <td>
+           <span>J</span>
+        </td>
+        <td>
+           <span>粒子动能</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.utx</span>
+        </td>
+        <td>
+           <span>d(qx,t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子轨迹的切向单位矢量，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.uty</span>
+        </td>
+        <td>
+           <span>d(qy,t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子轨迹的切向单位矢量，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.utz</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子轨迹的切向单位矢量，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rhoc</span>
+        </td>
+        <td>
+           <span>1/sqrt((d(d(qx,t),t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^2-d(qx,t)*(d(qx,t)*d(d(qx,t),t)+d(qy,t)*d(d(qy,t),t))/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^4)^2+(d(d(qy,t),t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^2-d(qy,t)*(d(qx,t)*d(d(qx,t),t)+d(qy,t)*d(d(qy,t),t))/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^4)^2+eps)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>轨迹曲率半径</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.unx</span>
+        </td>
+        <td>
+           <span>(d(d(qx,t),t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^2-d(qx,t)*(d(qx,t)*d(d(qx,t),t)+d(qy,t)*d(d(qy,t),t))/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^4)*fpt.rhoc</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>密切面单位法线，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.uny</span>
+        </td>
+        <td>
+           <span>(d(d(qy,t),t)/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^2-d(qy,t)*(d(qx,t)*d(d(qx,t),t)+d(qy,t)*d(d(qy,t),t))/sqrt(d(qx,t)^2+d(qy,t)^2+eps)^4)*fpt.rhoc</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>密切面单位法线，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.unz</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>密切面单位法线，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqcx</span>
+        </td>
+        <td>
+           <span>-fpt.unx*fpt.rhoc</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>相对于曲率中心的位移，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqcy</span>
+        </td>
+        <td>
+           <span>-fpt.uny*fpt.rhoc</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>相对于曲率中心的位移，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dqcz</span>
+        </td>
+        <td>
+           <span>-fpt.unz*fpt.rhoc</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>相对于曲率中心的位移，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.qcx</span>
+        </td>
+        <td>
+           <span>qx-fpt.dqcx</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>曲率中心，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.qcy</span>
+        </td>
+        <td>
+           <span>qy-fpt.dqcy</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>曲率中心，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.qcz</span>
+        </td>
+        <td>
+           <span>-fpt.dqcz</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>曲率中心，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.ubx</span>
+        </td>
+        <td>
+           <span>fpt.unz*fpt.uty-fpt.uny*fpt.utz</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>单位副法线，x 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.uby</span>
+        </td>
+        <td>
+           <span>-fpt.unz*fpt.utx+fpt.unx*fpt.utz</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>单位副法线，y 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.ubz</span>
+        </td>
+        <td>
+           <span>fpt.uny*fpt.utx-fpt.unx*fpt.uty</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>单位副法线，z 分量</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs6535962">
+      <a name="cs2059246">
+         <span>形函数</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>形函数</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>形函数坐标系</span>
+        </th>
+        <th>
+           <span>选择</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.dp</span>
+        </td>
+        <td>
+           <span>间断拉格朗日 (常数)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒径</span>
+        </td>
+        <td>
+           <span>材料</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>qx</span>
+        </td>
+        <td>
+           <span>间断拉格朗日 (常数)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子位置，x 分量</span>
+        </td>
+        <td>
+           <span>材料</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>qy</span>
+        </td>
+        <td>
+           <span>间断拉格朗日 (常数)</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>粒子位置，y 分量</span>
+        </td>
+        <td>
+           <span>材料</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs6213636">
+      <a name="cs6194548">
+         <span>2.4.4. 释放 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_rel1_view1.png" alt="phys_fpt_rel1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6403939">
+         <span>释放 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5756205">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 域 1</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs1818836">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_rel1_1.png" alt="equ_fpt_rel1_1.png" width="40" height="12" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel1_2.png" alt="equ_fpt_rel1_2.png" width="36" height="11" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel1_3.png" alt="equ_fpt_rel1_3.png" width="57" height="26" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel1_4.png" alt="equ_fpt_rel1_4.png" width="59" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5208380">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始粒子速度</span>
+        </td>
+        <td>
+           <span>{0, 0, 0}</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs4058142">
+      <a name="cs2090601">
+         <span>释放时间</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs9886194">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>分布函数</span>
+        </td>
+        <td>
+           <span>值列表</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>释放时间</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs1149703">
+      <a name="cs5037643">
+         <span>初始位置</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs5818756">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始位置</span>
+        </td>
+        <td>
+           <span>基于网格</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>细化因子</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs7868587">
+      <a name="cs4222951">
+         <span>初始速度</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs8189097">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始速度</span>
+        </td>
+        <td>
+           <span>定速，球</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>从分布取样</span>
+        </td>
+        <td>
+           <span>确定性</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>允许分布中的速度不均匀</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>速度</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>速度空间粒子数</span>
+        </td>
+        <td>
+           <span>100</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs4876349">
+      <a name="cs5024378">
+         <span>释放的粒子属性</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs5632981">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>释放的粒子属性</span>
+        </td>
+        <td>
+           <span>粒子属性 1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs1439695">
+      <a name="cs2616177">
+         <span>初始粒径</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs6456310">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>分布函数</span>
+        </td>
+        <td>
+           <span>无</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>初始粒径</span>
+        </td>
+        <td>
+           <span>2E-5</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs8779743">
+      <a name="cs6067110">
+         <span>高级设置</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs6757639">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>从初始粒子速度中减去动坐标系速度</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9645622">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs4244274">
+      <a name="cs5947112">
+         <span>变量</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>表达式</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>选择</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rel1.Us</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+        <td>
+           <span>速度</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rel1.Ntf</span>
+        </td>
+        <td>
+           <span>nojac(fpt.sum_all(if(fpt.prf==1,1,0)))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>由特征释放的粒子总数</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.rel1.dp0</span>
+        </td>
+        <td>
+           <span>20[um]</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+        <td>
+           <span>初始粒径</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs1888844">
+      <a name="cs1183750">
+         <span>2.4.5. 出口 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_out1_view1.png" alt="phys_fpt_out1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3459398">
+         <span>出口 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs6490347">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>边界</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 1: 边界 11–12</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs4210206">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_out1_1.png" alt="equ_fpt_out1_1.png" width="38" height="9" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_out1_2.png" alt="equ_fpt_out1_2.png" width="155" height="12" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs7903442">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>壁条件</span>
+        </td>
+        <td>
+           <span>冻结</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4235486">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs9606952">
+      <a name="cs6872272">
+         <span>2.4.6. 释放 2</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_rel2_view1.png" alt="phys_fpt_rel2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2873188">
+         <span>释放 2</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs8187970">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 2: 没有域 </span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs7497762">
+       <span>方程</span>
+    </div>
+    <p>
+      <img src="particles_files/equ_fpt_rel2_1.png" alt="equ_fpt_rel2_1.png" width="40" height="12" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel2_2.png" alt="equ_fpt_rel2_2.png" width="36" height="11" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel2_3.png" alt="equ_fpt_rel2_3.png" width="57" height="26" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="particles_files/equ_fpt_rel2_4.png" alt="equ_fpt_rel2_4.png" width="59" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs8007934">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始粒子速度</span>
+        </td>
+        <td>
+           <span>{0, 0, 0}</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs6372672">
+      <a name="cs2397598">
+         <span>释放时间</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs8854855">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>分布函数</span>
+        </td>
+        <td>
+           <span>值列表</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>释放时间</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs8899970">
+      <a name="cs9179938">
+         <span>初始位置</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs5894670">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始位置</span>
+        </td>
+        <td>
+           <span>基于网格</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>细化因子</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs4906779">
+      <a name="cs1847793">
+         <span>初始速度</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs5542924">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>初始速度</span>
+        </td>
+        <td>
+           <span>定速，球</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>从分布取样</span>
+        </td>
+        <td>
+           <span>确定性</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>允许分布中的速度不均匀</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>速度</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+        <td>
+           <span>m/s</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>速度空间粒子数</span>
+        </td>
+        <td>
+           <span>100</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs2963710">
+      <a name="cs3063025">
+         <span>释放的粒子属性</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs1561744">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>释放的粒子属性</span>
+        </td>
+        <td>
+           <span>粒子属性 1</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs8924431">
+      <a name="cs3414798">
+         <span>初始粒径</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs2114506">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>分布函数</span>
+        </td>
+        <td>
+           <span>无</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>初始粒径</span>
+        </td>
+        <td>
+           <span>1E-5</span>
+        </td>
+        <td>
+           <span>m</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs2065907">
+      <a name="cs2309200">
+         <span>高级设置</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs1690565">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>从初始粒子速度中减去动坐标系速度</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5818139">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs5644337">
+      <a name="cs6874488">
+         <span>2.4.7. 粒子计数器 1</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_pcnt1_view1.png" alt="phys_fpt_pcnt1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8039033">
+         <span>粒子计数器 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs9616799">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>边界</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 1: 边界 12</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs9818436">
+      <a name="cs3064842">
+         <span>粒子计数器</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs3753986">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>释放特征</span>
+        </td>
+        <td>
+           <span>全部</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4605042">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs5477404">
+      <a name="cs9953520">
+         <span>变量</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>表达式</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>选择</span>
+        </th>
+        <th>
+           <span>详细信息</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt1.Ob</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子计数器助变量</span>
+        </td>
+        <td>
+           <span>边界 12</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt1.Ob</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子计数器助变量</span>
+        </td>
+        <td>
+           <span>边界 1–11, 13–145</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt1.rL</span>
+        </td>
+        <td>
+           <span>at('last',if(isnan(qx),0,if(bndenv(fpt.pcnt1.Ob)==1,1,0)))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子内含物的逻辑表达式</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt1.Nsel</span>
+        </td>
+        <td>
+           <span>fpt.sum(if(bndenv(fpt.pcnt1.Ob)==1,1,0))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>选择中的粒子总数</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt1.alpha</span>
+        </td>
+        <td>
+           <span>fpt.sum(if(bndenv(fpt.pcnt1.Ob)==1,1,0))/nojac(fpt.sum(1))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>传输概率</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs8026241">
+      <a name="cs8842037">
+         <span>2.4.8. 粒子计数器 2</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/phys_fpt_pcnt2_view1.png" alt="phys_fpt_pcnt2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7557463">
+         <span>粒子计数器 2</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5615003">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>边界</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>几何 geom1: 维度 1: 边界 11</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs4495598">
+      <a name="cs7176496">
+         <span>粒子计数器</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs1036079">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>释放特征</span>
+        </td>
+        <td>
+           <span>释放 1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8226831">
+           <span>来自材料的属性</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>属性</span>
+        </th>
+        <th>
+           <span>材料</span>
+        </th>
+        <th>
+           <span>属性组</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>密度</span>
+        </td>
+        <td>
+           <span>(C3H4O2)n (Polylactic acid, PLA) (Bodurov et al. 2016: PDLA; n 0.405-0.635 um)</span>
+        </td>
+        <td>
+           <span>基本</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs3598578">
+      <a name="cs2525644">
+         <span>变量</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <th>
+           <span>名称</span>
+        </th>
+        <th>
+           <span>表达式</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>选择</span>
+        </th>
+        <th>
+           <span>详细信息</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.isRel</span>
+        </td>
+        <td>
+           <span>if(fpt.prf==1,1,0)</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>释放内含物的逻辑表达式</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.Ob</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子计数器助变量</span>
+        </td>
+        <td>
+           <span>边界 11</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.Ob</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子计数器助变量</span>
+        </td>
+        <td>
+           <span>边界 1–10, 12–145</span>
+        </td>
+        <td>
+           <span>+ 运算</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.rL</span>
+        </td>
+        <td>
+           <span>at('last',if(isnan(qx),0,if(bndenv(fpt.pcnt2.Ob)==1,1,0)*fpt.pcnt2.isRel))</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>粒子内含物的逻辑表达式</span>
+        </td>
+        <td>
+           <span>Particles</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.Nsel</span>
+        </td>
+        <td>
+           <span>fpt.sum(if(bndenv(fpt.pcnt2.Ob)==1,1,0)*fpt.pcnt2.isRel)</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>选择中的粒子总数</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>fpt.pcnt2.alpha</span>
+        </td>
+        <td>
+           <span>fpt.sum(if(bndenv(fpt.pcnt2.Ob)==1,1,0)*fpt.pcnt2.isRel)/fpt.rel1.Ntf</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>传输概率</span>
+        </td>
+        <td>
+           <span>全局</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs4045875">
+      <a name="cs6471489">
+         <span>2.5. 网格 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="particles_files/mesh_mesh1_view1.png" alt="mesh_mesh1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3400913">
+         <span>网格 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs2461066">
+           <span>网格统计信息</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>状态</span>
+        </td>
+        <td>
+           <span>完整网格</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>网格顶点</span>
+        </td>
+        <td>
+           <span>3291</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>三角形</span>
+        </td>
+        <td>
+           <span>5462</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>边单元</span>
+        </td>
+        <td>
+           <span>1124</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>顶点单元</span>
+        </td>
+        <td>
+           <span>144</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>单元数</span>
+        </td>
+        <td>
+           <span>5462</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>最小单元质量</span>
+        </td>
+        <td>
+           <span>0.415</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>平均单元质量</span>
+        </td>
+        <td>
+           <span>0.8568</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>单元面积比</span>
+        </td>
+        <td>
+           <span>0.0039511</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>网格面积</span>
+        </td>
+        <td>
+           <span>14.38 mm²</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs8441031">
+      <a name="cs8739009">
+         <span>2.5.1. 大小 (size)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs9556240">
+           <span>设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>最大单元大小</span>
+        </td>
+        <td>
+           <span>0.846</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>最小单元大小</span>
+        </td>
+        <td>
+           <span>0.00286</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>曲率因子</span>
+        </td>
+        <td>
+           <span>0.25</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>最大单元增长率</span>
+        </td>
+        <td>
+           <span>1.25</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>预定义大小</span>
+        </td>
+        <td>
+           <span>较细化</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs4268459">
+      <a name="cs5674699">
+         <span>2.5.2. 自由三角形网格 1 (ftri1)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs2947034">
+           <span>选择</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>几何实体层</span>
+        </td>
+        <td>
+           <span>域</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>选择</span>
+        </td>
+        <td>
+           <span>剩余部分</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="particles_files/mesh_mesh1_ftri1_view1.png" alt="mesh_mesh1_ftri1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5100130">
+         <span>自由三角形网格 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4751101">
+           <span>设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>迭代次数</span>
+        </td>
+        <td>
+           <span>4</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>要处理的最大单元深度</span>
+        </td>
+        <td>
+           <span>4</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>上次构建时间</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>构建方式</span>
+        </td>
+        <td>
+           <span>COMSOL 6.1.0.252 (win64)|2024 - 10 - 31T19:27:22.200316700</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs5879190">
+      <a name="cs1246310">
+         <span>3. 研究 1</span>
+      </a>
+    </h2>
+    <table border="1">
+      <caption>
+        <a name="cs1238432">
+           <span>计算信息</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>计算时间</span>
+        </td>
+        <td>
+           <span>5 s</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs5151318">
+      <a name="cs9278127">
+         <span>3.1. 瞬态</span>
+      </a>
+    </h3>
+    <table border="1">
+      <tr>
+        <th>
+           <span>时步</span>
+        </th>
+        <th>
+           <span>单位</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>range(0,0.1,5)</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8215811">
+           <span>研究设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>包含几何非线性</span>
+        </td>
+        <td>
+           <span>关</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6257863">
+           <span>研究设置</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>输出时步</span>
+        </td>
+        <td>
+           <span>{0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5}</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs3346638">
+           <span>物理场和变量选择</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>物理场接口</span>
+        </th>
+        <th>
+           <span>离散化</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>流体流动颗粒跟踪 (fpt)</span>
+        </td>
+        <td>
+           <span>physics</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6606737">
+           <span>网格选择</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>几何</span>
+        </th>
+        <th>
+           <span>网格</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>几何 1 (geom1)</span>
+        </td>
+        <td>
+           <span>mesh1</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2772637">
+      <a name="cs8326517">
+         <span>3.2. 求解器配置</span>
+      </a>
+    </h3>
+    <h4 id="cs9353217">
+      <a name="6733746.0">
+         <span>3.2.1. 解 1</span>
+      </a>
+    </h4>
+    <h5 id="cs8736885">
+      <a name="cs6162130">
+         <span>编译方程: 瞬态 (st1)</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs4892154">
+           <span>研究和步骤</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>使用研究</span>
+        </td>
+        <td>
+          <a href="particles.html#cs1246310">
+             <span>研究 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>使用研究步骤</span>
+        </td>
+        <td>
+           <span>瞬态</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs3697964">
+       <span>Log</span>
+    </div>
+    <div class="Code" id="cs3084631">&lt;---- 研究 1/解 1 (sol1) 中的“编译方程: 瞬态” ---------------------------------------------</div>
+    <div class="Code" id="cs6353793">开始于 2024年10月31日 下午7:38:54。</div>
+    <div class="Code" id="cs9085608">几何形函数: 二次拉格朗日单元</div>
+    <div class="Code" id="cs1381852">几何形函数: 二次拉格朗日单元</div>
+    <div class="Code" id="cs9239855">在 Intel64 Family 6 Model 154 Stepping 3, GenuineIntel 上运行。</div>
+    <div class="Code" id="cs5762238">在以下位置使用 1 个插槽： Chloral 上（共 16 个内核）。</div>
+    <div class="Code" id="cs4522514">可用内存：16.07 GB。</div>
+    <div class="Code" id="cs7633578">时间：0。</div>
+    <div class="Code" id="cs4934539">物理内存: 1.97 GB</div>
+    <div class="Code" id="cs5482692">虚拟内存: 3.22 GB</div>
+    <div class="Code" id="cs1654242">结束时间：2024年10月31日 下午7:38:54。</div>
+    <div class="CodeLast" id="cs8470600">----- 研究 1/解 1 (sol1) 中的“编译方程: 瞬态” --------------------------------------------&gt;</div>
+    <h5 id="cs3392140">
+      <a name="cs1962647">
+         <span>因变量 1 (v1)</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs2124569">
+           <span>常规</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>由研究步骤定义</span>
+        </td>
+        <td>
+          <a href="particles.html#cs9278127">
+             <span>瞬态</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs1610623">
+           <span>残差缩放</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>方法</span>
+        </td>
+        <td>
+           <span>手动</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7893418">
+           <span>初始值计算常数</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>常数名称</span>
+        </th>
+        <th>
+           <span>初始值源</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>t</span>
+        </td>
+        <td>
+           <span>range(0,0.1,5)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>timestep</span>
+        </td>
+        <td>
+           <span>0.005[s]</span>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs8131876">
+       <span>Log</span>
+    </div>
+    <div class="Code" id="cs5976795">&lt;---- 研究 1/解 1 (sol1) 中的“因变量 1” ------------------------------------------------</div>
+    <div class="Code" id="cs7261592">开始于 2024年10月31日 下午7:38:54。</div>
+    <div class="Code" id="cs6845088">求解时间：0 s。</div>
+    <div class="Code" id="cs7262763">物理内存: 1.97 GB</div>
+    <div class="Code" id="cs1301733">虚拟内存: 3.22 GB</div>
+    <div class="Code" id="cs7699130">结束时间：2024年10月31日 下午7:38:54。</div>
+    <div class="CodeLast" id="cs4281692">----- 研究 1/解 1 (sol1) 中的“因变量 1” -----------------------------------------------&gt;</div>
+    <h6 id="cs6473361">
+      <a name="cs7501513">
+         <span>粒径 (comp1.fpt.dp) (comp1_fpt_dp)</span>
+      </a>
+    </h6>
+    <table border="1">
+      <caption>
+        <a name="cs7696732">
+           <span>常规</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>场分量</span>
+        </td>
+        <td>
+           <span>comp1.fpt.dp</span>
+        </td>
+      </tr>
+    </table>
+    <h6 id="cs9967916">
+      <a name="cs1831627">
+         <span>粒子位置 (comp1.qfpt) (comp1_qfpt)</span>
+      </a>
+    </h6>
+    <table border="1">
+      <caption>
+        <a name="cs6038853">
+           <span>常规</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>场分量</span>
+        </td>
+        <td>
+           <span>{comp1.qx, comp1.qy}</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs3479712">
+      <a name="cs4004764">
+         <span>瞬态求解器 1 (t1)</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs7537022">
+           <span>常规</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>由研究步骤定义</span>
+        </td>
+        <td>
+          <a href="particles.html#cs9278127">
+             <span>瞬态</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>输出时步</span>
+        </td>
+        <td>
+           <span>{0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>相对容差</span>
+        </td>
+        <td>
+           <span>1E-5</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9561554">
+           <span>时间步进</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>方法</span>
+        </td>
+        <td>
+           <span>广义 α</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>求解器采用的步长</span>
+        </td>
+        <td>
+           <span>精确</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>误差估计</span>
+        </td>
+        <td>
+           <span>排除代数</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4969420">
+           <span>求解时显示结果</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>绘制</span>
+        </td>
+        <td>
+           <span>开</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>绘图组</span>
+        </td>
+        <td>
+          <a href="particles.html#cs8256390">
+             <span>粒子轨迹 (fpt)</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <div class="TableHeading" id="cs8148055">
+       <span>Log</span>
+    </div>
+    <div class="Code" id="cs6694313">&lt;---- 研究 1/解 1 (sol1) 中的“瞬态求解器 1” ----------------------------------------------</div>
+    <div class="Code" id="cs9670986">开始于 2024年10月31日 下午7:38:54。</div>
+    <div class="Code" id="cs6648746">瞬态求解器（广义 α）</div>
+    <div class="Code" id="cs9244247">求解的自由度数：18600。</div>
+    <div class="Code" id="cs1437372">找到对称矩阵。</div>
+    <div class="Code" id="cs8422664">缩放因变量：</div>
+    <div class="Code" id="cs4796510">粒径 (comp1.fpt.dp): 1</div>
+    <div class="Code" id="cs8778435">粒子位置 (comp1.qfpt): 1</div>
+    <div class="Code" id="cs5664039">Step        Time    Stepsize      Res  Jac  Sol Order Tfail NLfail LinIt   LinErr   LinRes</div>
+    <div class="Code" id="cs2376296">   0           0           - out    2    3    2                  0     0        0        0</div>
+    <div class="Code" id="cs7447832">   1       0.005       0.005        3    4    3     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6211358">   2       0.015        0.01        4    5    4     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1388522">   3       0.035        0.02        5    6    5     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8365436">   4      0.0675      0.0325        6    7    6     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4821459">   5         0.1      0.0325 out    7    7    7     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8367773">   6        0.15        0.05        8    8    8     2     0      0     0        0        -</div>
+    <div class="Code" id="cs7713512">   7         0.2        0.05 out    9    8    9     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1358938">   8         0.3         0.1 out   10    9   10     2     0      0     0        0        -</div>
+    <div class="Code" id="cs7779110">   9         0.4         0.1 out   11    9   11     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1762855">  10         0.5         0.1 out   12    9   12     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6353539">  11         0.6         0.1 out   13    9   13     2     0      0     0        0        -</div>
+    <div class="Code" id="cs7397255">  12         0.7         0.1 out   14    9   14     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8747575">  13         0.8         0.1 out   15    9   15     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9188985">  14         0.9         0.1 out   16    9   16     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6144176">  15           1         0.1 out   17    9   17     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9814793">  16         1.1         0.1 out   18    9   18     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4983974">  17         1.2         0.1 out   19    9   19     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6833264">  18         1.3         0.1 out   20    9   20     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4871113">  19         1.4         0.1 out   21    9   21     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1898014">  20         1.5         0.1 out   22    9   22     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6104636">  21         1.6         0.1 out   23    9   23     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5900101">  22         1.7         0.1 out   24    9   24     2     0      0     0        0        -</div>
+    <div class="Code" id="cs3183763">  23         1.8         0.1 out   25    9   25     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1848699">  24         1.9         0.1 out   26    9   26     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6869292">  25           2         0.1 out   27    9   27     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5698666">  26         2.1         0.1 out   28    9   28     2     0      0     0        0        -</div>
+    <div class="Code" id="cs3320018">  27         2.2         0.1 out   29    9   29     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8422765">  28         2.3         0.1 out   30    9   30     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8314887">  29         2.4         0.1 out   31    9   31     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8421519">  30         2.5         0.1 out   32    9   32     2     0      0     0        0        -</div>
+    <div class="Code" id="cs2861878">  31         2.6         0.1 out   33    9   33     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6897253">  32         2.7         0.1 out   34    9   34     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9467040">  33         2.8         0.1 out   35    9   35     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4388648">  34         2.9         0.1 out   36    9   36     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1766164">  35           3         0.1 out   37    9   37     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1081581">  36         3.1         0.1 out   38    9   38     2     0      0     0        0        -</div>
+    <div class="Code" id="cs8022274">  37         3.2         0.1 out   39    9   39     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5360192">  38         3.3         0.1 out   40    9   40     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6470112">  39         3.4         0.1 out   41    9   41     2     0      0     0        0        -</div>
+    <div class="Code" id="cs7933892">  40         3.5         0.1 out   42    9   42     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9590378">  41         3.6         0.1 out   43    9   43     2     0      0     0        0        -</div>
+    <div class="Code" id="cs3631518">  42         3.7         0.1 out   44    9   44     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9958627">  43         3.8         0.1 out   45    9   45     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6969279">  44         3.9         0.1 out   46    9   46     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4313842">  45           4         0.1 out   47    9   47     2     0      0     0        0        -</div>
+    <div class="Code" id="cs3015906">  46         4.1         0.1 out   48    9   48     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5298095">  47         4.2         0.1 out   49    9   49     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5053929">  48         4.3         0.1 out   50    9   50     2     0      0     0        0        -</div>
+    <div class="Code" id="cs6940079">  49         4.4         0.1 out   51    9   51     2     0      0     0        0        -</div>
+    <div class="Code" id="cs5492938">  50         4.5         0.1 out   52    9   52     2     0      0     0        0        -</div>
+    <div class="Code" id="cs9291078">  51         4.6         0.1 out   53    9   53     2     0      0     0        0        -</div>
+    <div class="Code" id="cs1367673">  52         4.7         0.1 out   54    9   54     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4712176">  53         4.8         0.1 out   55    9   55     2     0      0     0        0        -</div>
+    <div class="Code" id="cs7254813">  54         4.9         0.1 out   56    9   56     2     0      0     0        0        -</div>
+    <div class="Code" id="cs3586899">  55           5         0.1 out   57    9   57     2     0      0     0        0        -</div>
+    <div class="Code" id="cs4287182">求解时间：4 s。</div>
+    <div class="Code" id="cs6765225">物理内存: 2.06 GB</div>
+    <div class="Code" id="cs3118136">虚拟内存: 3.29 GB</div>
+    <div class="Code" id="cs2795007">结束时间：2024年10月31日 下午7:38:58。</div>
+    <div class="CodeLast" id="cs2692999">----- 研究 1/解 1 (sol1) 中的“瞬态求解器 1” ---------------------------------------------&gt;</div>
+    <h6 id="cs7067817">
+      <a name="cs8116334">
+         <span>全耦合 1 (fc1)</span>
+      </a>
+    </h6>
+    <table border="1">
+      <caption>
+        <a name="cs6785357">
+           <span>常规</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>线性求解器</span>
+        </td>
+        <td>
+          <a href="particles.html#cs5632699">
+             <span>迭代 1</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7891193">
+           <span>方法和终止</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>容差因子</span>
+        </td>
+        <td>
+           <span>0.1</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs8735858">
+      <a name="cs1712596">
+         <span>4. 结果</span>
+      </a>
+    </h2>
+    <h3 id="cs9332061">
+      <a name="cs4344619">
+         <span>4.1. 数据集</span>
+      </a>
+    </h3>
+    <h4 id="cs4237851">
+      <a name="cs1455618">
+         <span>4.1.1. 研究 1/解 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs9481157">
+           <span>解</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>解</span>
+        </td>
+        <td>
+          <a href="particles.html#6733746.0">
+             <span>解 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>组件</span>
+        </td>
+        <td>
+           <span>组件 1 (comp1)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>几何</span>
+        </td>
+        <td>
+           <span>Save Point Geometry 1</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="particles_files/dset_dset1.png" alt="dset_dset1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs4411175">
+         <span>数据集: 研究 1/解 1</span>
+      </a>
+    </p>
+    <h4 id="cs2730542">
+      <a name="cs2330242">
+         <span>4.1.2. 粒子 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs9621778">
+           <span>粒子解</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>描述</span>
+        </th>
+        <th>
+           <span>值</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>解</span>
+        </td>
+        <td>
+          <a href="particles.html#6733746.0">
+             <span>解 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>粒子几何明细</span>
+        </td>
+        <td>
+           <span>来自物理场接口</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>物理场接口</span>
+        </td>
+        <td>
+          <a href="particles.html#cs4878179">
+             <span>流体流动颗粒跟踪</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="particles_files/dset_part1.png" alt="dset_part1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2291548">
+         <span>数据集: 粒子 1</span>
+      </a>
+    </p>
+    <h3 id="cs1385358">
+      <a name="cs7863427">
+         <span>4.2. 表格</span>
+      </a>
+    </h3>
+    <h4 id="cs1704925">
+      <a name="cs8803090">
+         <span>4.2.1. Evaluation 2D</span>
+      </a>
+    </h4>
+    <p>
+      <a name="cs6348167">
+         <span>交互的二维值</span>
+      </a>
+    </p>
+    <table border="1">
+      <tr>
+        <th>
+           <span>x</span>
+        </th>
+        <th>
+           <span>y</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>22.229</span>
+        </td>
+        <td>
+           <span>-0.64336</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>22.066</span>
+        </td>
+        <td>
+           <span>-0.83918</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>24.105</span>
+        </td>
+        <td>
+           <span>-0.43025</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>24.155</span>
+        </td>
+        <td>
+           <span>0.63182</span>
+        </td>
+        <td>
+           <span>0.016</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs5595565">
+      <a name="cs5529678">
+         <span>4.3. 绘图组</span>
+      </a>
+    </h3>
+    <h4 id="cs4393553">
+      <a name="cs8256390">
+         <span>4.3.1. 粒子轨迹 (fpt)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="particles_files/pg_pg1.png" alt="pg_pg1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8628419">
+         <span>粒子轨迹</span>
+      </a>
+    </p>
+  </body>
+</html>
